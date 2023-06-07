@@ -9,10 +9,10 @@ local vec_node = {
 }
 
 local math_wrA_no_backslash = {
-  s({ trig = "([%a][%a])(%.,)" }, vim.deepcopy(vec_node)),
-  s({ trig = "([%a][%a])(,%.)" }, vim.deepcopy(vec_node)),
-  s({ trig = "([%a])(%.,)" }, vim.deepcopy(vec_node)),
-  s({ trig = "([%a])(,%.)" }, vim.deepcopy(vec_node)),
+  -- s({ trig = "([%a][%a])(%.,)" }, vim.deepcopy(vec_node)),
+  -- s({ trig = "([%a][%a])(,%.)" }, vim.deepcopy(vec_node)),
+  s({ trig = "([%w])(%.,)" }, vim.deepcopy(vec_node)),
+  s({ trig = "([%w])(,%.)" }, vim.deepcopy(vec_node)),
 }
 
 return math_wrA_no_backslash
